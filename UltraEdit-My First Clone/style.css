@@ -1,0 +1,314 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+img {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+button a {
+  color: white;
+}
+
+nav {
+  display: flex;
+  margin: 10px 30px 0px 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav ul {
+  display: flex;
+  gap: 23px;
+}
+
+nav ul li {
+  padding: 5px;
+}
+
+.img1 {
+  display: inline-block;
+  height: 80px;
+  background-color: white;
+  padding-right: 350px;
+}
+
+.img2 {
+  height: 16px;
+  background-color: white;
+}
+
+.div1 {
+  font-size: xxx-large;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div1 span {
+  font-weight: bold;
+}
+
+.rr {
+  padding-left: 15px;
+  width: 90px;
+}
+
+.div2 {
+  text-align: center;
+  font-size: 27px;
+  display: flex;
+  flex-direction: column;
+  align-item: center;
+  justify-content: center;
+  margin: 40px 120px 0px 120px;
+  gap: 30px;
+}
+
+.div2 button {
+  height: 50px;
+  width: 300px;
+  align-self: center;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 9px;
+  background-color: #00b6d1;
+  font-weight: bold;
+}
+
+.div3 {
+  margin-top: 65px;
+  margin-left: 120px;
+  display: flex;
+  align-items: center;
+  font-size: small;
+}
+
+.div3 img {
+  padding: 0px;
+  margin-right: 20px;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+
+.span1 {
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 0px;
+  padding-bottom: 15px;
+}
+
+.span2 {
+  padding-bottom: 6px;
+}
+
+.div4 {
+  gap: 32px;
+  margin: 30px 120px 63px 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.div4 div {
+  height: 170px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lan {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0px 15px 0px;
+}
+
+.div4 span:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.div4 button {
+  padding: 5px;
+  color: white;
+  background-color: #5cb85c;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.div4 span {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.div4 div span:last-child,
+.div4 div span:nth-last-child(2) {
+  font-size: 8px;
+}
+
+.div5 {
+  height: 400px;
+  color: white;
+  background-color: rgb(42, 40, 40);
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+
+.div5 div:first-child {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 200px;
+  width: 500px;
+  text-align: center;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.div5 div:first-child h2 {
+  margin-bottom: 20px;
+}
+
+.div5 div:last-child {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-sizing: border-box;
+  height: 240px;
+  width: 300px;
+  text-align: center;
+  margin-top: 50px;
+  color: black;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.div5 div:last-child h3 {
+  color: #00b6d1;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.div5 div:last-child label {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.div5 div:last-child input {
+  height: 45px;
+  border: 1px solid lightgray;
+}
+
+.div5 div:last-child button {
+  height: 45px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #00b6d1;
+  margin-top: 10px;
+}
+
+.div6 {
+  padding-bottom: 80px;
+  color: white;
+  background-color: rgb(42, 40, 40);
+}
+
+.div6 div {
+  line-height: 35px;
+  margin-left: 13vw;
+  width: 72vw;
+}
+
+a {
+  color: #00b6d1;
+  text-decoration: none;
+}
+
+.upperfooter {
+  padding: 70px 60px 40px 60px;
+  display: flex;
+  gap: 70px;
+  font-size: 14px;
+  justify-content: center;
+}
+
+.upperfooter div {
+  padding: 0px;
+  width: 206px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.upperfooter h4 {
+  margin-bottom: 23px;
+}
+
+.upperfooter ul li {
+  padding-bottom: 8px;
+  line-height: 13px;
+}
+
+.upperfooter input {
+  margin-top: 7px;
+  text-align: center;
+  width: 170px;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.upperfooter button {
+  width: 170px;
+  height: 35px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #00b6d1;
+  margin-top: 10px;
+}
+
+.lowerfooter {
+  display: flex;
+  justify-content: center;
+  gap: 170px;
+  margin-bottom: 50px;
+}
+
+.lowerfooter div:first-child {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.lowerfooter div:first-child span {
+  padding-left: 17px;
+}
+
+.lowerfooter div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lowerfooter div:last-child img {
+  padding-bottom: 27px;
+  width: 300px;
+}
