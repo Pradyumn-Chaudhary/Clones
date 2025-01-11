@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Work Sans", serif;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+  scrollbar-color: hsla(0, 0%, 100%, 0.3) transparent;
+  overflow: hidden;
+}
+header {
+  margin: 5px 10px 10px 7px;
+  height: 55px;
+  gap: 10px;
+}
+.home {
+  height: inherit;
+  width: 33vw;
+}
+#menu{
+  display: none;
+}
+.logo {
+  margin-left: 5px;
+}
+.home-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.home-btn img {
+  width: 20px;
+  height: 20.89px;
+}
+.search {
+  height: 48px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 35vw;
+  padding: 2px;
+  justify-content: baseline;
+  gap: 3px;
+}
+#search-input{
+  width: 100%;
+  text-overflow: ellipsis;
+  color: #b3b3b3;
+  outline: none;
+  font-size: 16px;
+}
+.search img {
+  height: 21px;
+}
+.signing {
+  font-weight: bold;
+  height: inherit;
+  width: 32vw;
+  gap: 4vw;
+  justify-content: end;
+}
+.sign-btn {
+  color: #b3b3b3;
+}
+.sign-btn:hover {
+  font-size: 17px;
+  color: white;
+}
+.log-btn {
+  font-weight: bold;
+  width: 108px;
+  height: 48px;
+  border-radius: 50px;
+  color: black;
+  background-color: #ffffff;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.log-btn:hover {
+  font-size: 17px;
+  width: 110px;
+  height: 49px;
+}
+.container {
+  height: 88vh;
+  gap: 7px;
+}
+#logIn-alert{
+  position: absolute;
+  z-index: -1;
+  background-color: #1f1f1f;
+  font-weight: bolder;
+  gap: 4px;
+}
+#logIn-alert button{
+width: 70px;
+height: 30px;
+border-radius: 20px;
+background-color: #ffffff;
+font-weight: bolder;
+}
+.left {
+  width: 33vw;
+  gap: 3vh;
+  height: 88vh;
+}
+.left > * {
+  margin: 0px 10px;
+}
+.lib {
+  margin-top: 20px;
+  height: 40px;
+}
+.lib div {
+  color: #b3b3b3;
+  font-weight: bold;
+  gap: 7px;
+}
+.lib img {
+  width: 24px;
+  height: 24px;
+}
+.scroll {
+  height: 45vh;
+  gap: 10px;
+  overflow: auto;
+}
+.create-playlist,
+.browse-podcast {
+  padding: 20px;
+  gap: 12px;
+  border-radius: 15px;
+}
+.create-playlist span:first-child,
+.browse-podcast span:first-child {
+  font-weight: bold;
+  font-size: 18px;
+}
+.create-playlist button,
+.browse-podcast button {
+  background-color: #ffffff;
+  color: #000000;
+  width: 12vw;
+  margin-top: 10px;
+  height: 42px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.song-card {
+  height: 12vh;
+  border: 1px solid #b3b3b3;
+  padding: 20px;
+}
+.song-card img {
+  height: 50px;
+}
+.song-card > div {
+  gap: 15px;
+}
+.cookies {
+  grid-template-columns: 0.8fr 1.7fr 1fr 0.8fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+}
+.cookies span {
+  color: #b3b3b3;
+  font-size: 11px;
+}
+.english, .sourceCode {
+  width: 96px;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-weight: bold;
+  margin: 0px 15px;
+  background-color: hsl(0deg 0% 7.06%);
+  color: white;
+}
+.sourceCode{
+  width: 160px;
+}
+.english img, .sourceCode img{
+  height: 16px;
+}
+.right{
+  position: relative;
+  height: 88vh;
+}
+.content {
+  width: 67vw;
+  height: 88vh;
+  overflow: scroll;
+}
+.popular-artist,
+.popular-album {
+  padding: 20px;
+}
+.popular-artist span:first-child,
+.popular-album span:first-child {
+  font-weight: bold;
+  font-size: 24px;
+}
+.popular-artist span:last-child,
+.popular-album span:last-child {
+  font-weight: 600;
+}
+.card {
+  height: 200px;
+  width: calc(100% / 5);
+  position: relative;
+  background: linear-gradient(to bottom, #1f1f1f, #121212);
+}
+.card img {
+  border-radius: 50%;
+}
+.card > *,
+.card1 > * {
+  padding: 0px 10px;
+}
+.card:hover,
+.card1:hover {
+  background: #1f1f1f;
+}
+.play {
+  height: 48px;
+  width: 38px;
+  border-radius: 50%;
+  background-color: #357a38;
+  position: absolute;
+  top: 124px;
+  right: 10px;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: transform 1s ease, opacity 1s ease;
+}
+.card:hover .play,
+.card1:hover .play {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card1 {
+  height: 200px;
+  width: calc(100% / 5);
+  position: relative;
+}
+.footer {
+  margin: 60px 10px;
+  gap: 20px;
+}
+.footer > div {
+  width: calc(100% / 5);
+}
+.social-app {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #292929;
+}
+.social-app img {
+  width: 16px;
+  height: 16px;
+}
+.break-line {
+  height: 2px;
+  margin: 50px 0px;
+  background-color: #292929;
+}
+.copyright {
+  margin: 0px 0px 90px 20px;
+}
+.play-bar {
+  width: 100%;
+  height: 12vh;
+  margin: 0px 10px;
+  position: absolute;
+  bottom: 0;
+  background-color: hsl(0deg 0% 7.06%);
+}
+.play-controls {
+  height: 4.5vh;
+  gap: 16px;
+}
+.play-controls div {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: white;
+}
+.play-bar img, .play-bar svg{
+  height: 16px;
+}
+.song {
+  height: 20px;
+  width: calc(60vw / 3);
+  font-size: 14px;
+  text-align: center;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#seekBar{
+  font-size: 9px;
+  width: calc(60vw/3);
+}
+.seek-bar{
+  width: 15vw;
+  border: 1px solid #b3b3b3;
+  height: 3px;
+  position: relative;
+  border-radius: 3px;
+}
+.mover {
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background-color: #b3b3b3;
+  position: absolute;
+  bottom: -3px;
+}
+#song-mover{
+  left: 0%;
+}
+#vol-mover{
+  left: 100%;
+}
+#song-bar, #vol-bar{
+  background-color: #ffffff;
+  height: 3px;
+  position: relative;
+  border-radius: 3px;
+}
+#song-bar{
+  width: 0px;
+}
+#vol-bar{
+  width: calc(100% + 9px);
+}
+
+@media (max-width: 576px) {
+  /* Styles for small phones */
+  header {
+    margin: 5px 10px 0px 0px;
+    height: 30px;
+    gap: 5px;
+  }
+  #menu{
+    display: block;
+  }
+  .logo {
+    margin-left: 1px;
+  }
+  .logo img{
+    height: 24px;
+    width: 24px;
+  }
+  .home-btn {
+    width: 24px;
+    height: 24px;
+  }
+  .home-btn img {
+    width: 16px;
+    height: 16.89px;
+  }
+  .search {
+    height: 24px;
+    width: 45vw;
+  }
+  #search-input{
+    font-size: 6px;
+    display: flex;
+  }
+  .search img {
+    height: 9px;
+  }
+  .signing {
+    gap: 7px;
+    font-size: 7px;
+  }
+  .sign-btn:hover {
+    font-size: 8px;
+  }
+  .log-btn {
+    width: 15vw;
+    height: 24px;
+    margin-right: 0px;
+    font-size: 7px;
+  }
+  .log-btn:hover {
+    font-size: 8px;
+    width: 16vw;
+    height: 25px;
+  }
+  .left {
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+  }
+  .lib {
+    height: 15px;
+  }
+  .scroll {
+    height: 45vh;
+    gap: 10px;
+  }
+  .create-playlist button,
+  .browse-podcast button {
+    width: 50vw;
+  }
+  .right{
+    width: 100vw;
+    z-index: 1;
+  }
+  .content {
+    width: 100vw;
+  }
+  .popular-artist,
+  .popular-album {
+    padding: 7px 15px 7px 7px;
+  }
+  .popular-artist span:first-child,
+  .popular-album span:first-child {
+    font-size: 14px;
+  }
+  .popular-artist span:last-child,
+  .popular-album span:last-child {
+    font-size: 7px;
+  }
+  .card {
+    height: 150px;
+    width: calc(100% / 3);
+  }
+  .artist-name {
+    font-size: 12px;
+  }
+  .prop{
+    font-size: 10px;
+  }
+  .play {
+    height: 34px;
+    width: 16px;
+    top: 85px;
+  }
+  .play img{
+    width: 18px;
+  }
+  .card1 {
+    height: 150px;
+    width: calc(100% / 3);
+    position: relative;
+  }
+  .footer {
+    margin: 30px 10px;
+    gap: 0px;
+  }
+  .footer > div h4{
+    font-size: 10px;
+  }
+  .footer > div ul{
+    gap: 0px;
+  }
+  .footer > div ul li a{
+    font-size: 7px;
+  }
+  .social-app {
+    background-color: hsl(0deg 0% 7.06%);
+  }
+  .social-app img {
+    width: 12px;
+    height: 12px;
+  }
+  .copyright {
+    font-size: 10px;
+    padding-bottom: 30px;
+  }
+  .play-bar{
+    flex-direction: column-reverse;
+    gap: 0px;
+    padding: 0;
+    margin:0px;
+    bottom: 0;
+  }
+  .song-info{
+    width: 100%;
+  }
+  .song {
+    height: 20px;
+    width: 100%;
+    font-size: 10px;
+  }
+  #seekBar{
+    font-size: 8px;
+    width: 100%;
+  }
+  #seek-bar {
+    width: 100%;
+  }
+  .seek-bar{
+    width: 75%;
+  }
+  .vol, .vol img, #vol-seek-bar, #vol-bar, #vol-mover{
+    display: none;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 576px) {
+  .card,.card1{
+    width: calc(100% / 4);
+  }
+}
+
+@media(min-width: 420px) and (in-width: 576px){
+  .card, .card1{
+    width: calc(100% / 4);
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  /* Styles for tablets */
+  #menu{
+    display: block;
+  }
+  .search{
+    width: 40vw;
+    height: 44px;
+  }
+  #search-input{
+    font-size: 10px;
+    display: flex;
+  }
+  .search img {
+    height: 10px;
+  }
+  .signing {
+    gap: 7px;
+    font-size: 14px;
+  }
+  .sign-btn:hover {
+    font-size: 15px;
+  }
+  .log-btn {
+    width: 15vw;
+    height: 26px;
+    margin-right: 0px;
+    font-size: 14px;
+  }
+  .log-btn:hover {
+    font-size: 15px;
+    width: 16vw;
+    height: 28px;
+  }
+  .left {
+    width: 50vw;
+    position: absolute;
+    z-index: 0;
+  }
+  .create-playlist button,
+  .browse-podcast button {
+    width: 50%;
+  }
+  .right{
+    width: 100vw;
+  }
+  .content{
+    width: 100vw;
+  }
+  .social-app {
+    background-color: hsl(0deg 0% 7.06%);
+  }
+
+  .play-bar{
+    flex-direction: column-reverse;
+  }
+  .song-info{
+    width: 100%;
+  }
+  .song {
+    height: 20px;
+    width: 100%;
+    font-size: 14px;
+  }
+  #seekBar{
+    width: 100%;
+  }
+  #seek-bar {
+    width: 100%;
+  }
+  .seek-bar{
+    width: 75%;
+  }
+  .vol, .vol img, #vol-seek-bar, #vol-bar, #vol-mover{
+    display: none;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 992px){
+  .card, .card1{
+    width: calc(100% / 6);
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1240px) {
+  /* Styles for laptops */
+}
+
+@media (min-width: 1300px) {
+  /* Styles for desktops and larger screens */
+  .card, .card1{
+    width: calc(100% / 7);
+  }
+}
+
+@media (min-width:1450px) {
+  .home {
+    width: 25vw;
+  }
+  .search{
+    width: 43vw;
+  }
+  .left{
+    width: 25vw;
+  }
+  .right{
+    width: 75vw;
+  }
+  .content{
+    width: 75vw;
+  }
+  .card, .card1{
+    width: calc(100% / 8);
+  }
+}
+
+@media (min-width:1820px) {
+  .card, .card1{
+    width: calc(100% / 10);
+  }
+}
+
+@media (min-width:2500px) {
+  .card, .card1{
+    width: calc(100% / 15);
+  }
+}

@@ -1,0 +1,86 @@
+* {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+*::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.item-center {
+  align-items: center;
+}
+.column {
+  flex-direction: column;
+}
+.underline:hover {
+  text-decoration: underline;
+}
+.bg {
+  background-color: #1f1f1f;
+}
+.grid {
+  display: grid;
+}
+button {
+  font-family: "Work Sans", serif;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.hsl {
+  background-color: hsl(0deg 0% 7.06%);
+}
+.br-10 {
+  border-radius: 10px 10px 0px 0px;
+}
+.b3 {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+.artist-name {
+  margin-bottom: 2px;
+}
+.flex-wrap {
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+.gap-7 {
+  gap: 7px;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
