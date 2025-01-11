@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="website icon" href="favicon.ico" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/utility.css" />
+  </head>
+  <body>
+    <header class="flex justify-center item-center">
+      <div class="home flex item-center justify-between">
+        <div class="menu flex">
+          <img id="menu" src="Images/menu.svg" alt="">
+        <div class="logo flex item-center">
+          <img class="" src="Images/logo.svg" alt="Spotify" />
+        </div>
+        </div>
+        <div class="home-btn flex justify-center item-center bg">
+          <img class="bg" src="Images/home.svg" alt="Home" />
+        </div>
+      </div>
+      <div class="bg search flex item-center">
+        &nbsp;
+          <img class="bg" src="Images/search.svg" alt="Search" />
+          <div style="width: 90%;">
+            <input class="bg" type="text" id="search-input" name="song-search" placeholder="What do you want to play?">
+          </div>
+      </div>
+      <div class="signing flex item-center">
+        <span class="sign-btn">Sign up</span>
+        <button class="log-btn">Log in</button>
+      </div>
+    </header>
+    <div class="container flex">
+      <aside>
+        <div id="logIn-alert" class="left flex column item-center justify-center br-10">
+          Please, Log in first
+          <button>OK</button>
+        </div>
+      <div id="left" class="left flex column hsl br-10">
+        <div class="lib flex item-center justify-between hsl">
+          <div class="flex justify-center item-center">
+            <img src="Images/YourLibrary.svg" alt="Library" />
+            Your Library
+          </div>
+          <div class="flex justify-center item-center">
+            <img id="plus" src="Images/plus.svg" alt="add" />
+          </div>
+        </div>
+        <div class="scroll flex column">
+        </div>
+        <div style="margin: 10px">
+          <div class="cookies grid">
+            <a href="https://www.spotify.com/in-en/legal/end-user-agreement/"
+              ><span>Legal</span></a
+            >
+            <a href="https://www.spotify.com/in-en/safetyandprivacy"
+              ><span>Safety & Privacy Center</span></a
+            >
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+              ><span>Privacy Policy</span></a
+            >
+            <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+              ><span>Cookies</span></a
+            >
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+              ><span>About Ads</span></a
+            >
+            <a href="https://www.spotify.com/in-en/accessibility"
+              ><span>Accessibility</span></a
+            >
+          </div>
+          <a
+            class="cookies"
+            href="https://www.spotify.com/in-en/legal/cookies-policy/"
+            ><span class="underline" style="font-size: 12px">Cookies</span></a
+          >
+        </div>
+        <div class="flex">
+          <button class="english flex item-center justify-evenly">
+            <img src="Images/Language.svg" alt="Language" />
+            <span>English</span>
+          </button>
+          <button class="sourceCode flex item-center justify-evenly">
+            <img src="Images/sourceCode.svg" alt="">
+            <span>View Source Code</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <div class="right hsl br-10">
+        <div class="content flex column br-10">
+          <div class="br-10">
+            <div class="popular-artist flex justify-between bg item-center">
+              <span class="underline bg">Popular Artist</span>
+              <span class="underline bg b3" id="show-allArtist">Show all</span>
+            </div>
+            <div id="artist" class="flex flex-wrap">
+            </div>
+          </div>
+          <div>
+            <div
+              class="popular-album flex justify-between item-center"
+              style="padding-bottom: 7px"
+            >
+              <span class="underline">Popular albums and singles</span>
+              <span class="underline b3" id="show-allAlbum">Show all</span>
+            </div>
+            <div id="album" class="flex flex-wrap">
+            </div>
+          </div>
+          <div class="footer flex justify-center">
+            <div class="company flex column gap-7">
+              <h4>Company</h4>
+              <ul class="flex column gap-7">
+                <li>
+                  <a
+                    class="b3 underline"
+                    href="https://www.spotify.com/in-en/about-us/contact/"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a class="b3 underline" href="https://www.lifeatspotify.com/"
+                    >Jobs</a
+                  >
+                </li>
+                <li>
+                  <a class="b3 underline" href="https://newsroom.spotify.com/"
+                    >For the Record</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="communities flex column gap-7">
+              <h4>Communities</h4>
+              <ul class="flex column gap-7">
+                <li><a class="b3 underline" href="/">For Artists</a></li>
+                <li><a class="b3 underline" href="/">Developers</a></li>
+                <li><a class="b3 underline" href="/">Advertising</a></li>
+                <li><a class="b3 underline" href="/">Investors</a></li>
+                <li><a class="b3 underline" href="/">Ventors</a></li>
+              </ul>
+            </div>
+            <div class="useful-links flex column gap-7">
+              <h4>Useful links</h4>
+              <ul class="flex column gap-7">
+                <li><a class="b3 underline" href="/">Support</a></li>
+                <li><a class="b3 underline" href="/">Free Mobile App</a></li>
+              </ul>
+            </div>
+            <div class="spotify-plans flex column gap-7">
+              <h4>Spotify plans</h4>
+              <ul class="flex column gap-7">
+                <li><a class="b3 underline" href="/">Premium Individual</a></li>
+                <li><a class="b3 underline" href="/">Premium Duo</a></li>
+                <li><a class="b3 underline" href="/">Premium Family</a></li>
+                <li><a class="b3 underline" href="/">Premium Student</a></li>
+                <li><a class="b3 underline" href="/">Spotify Free</a></li>
+              </ul>
+            </div>
+            <div class="social-media">
+              <ul class="flex justify-evenly">
+                <div class="social-app flex justify-center item-center">
+                  <li>
+                    <a href="https://www.instagram.com/spotify/"
+                      ><img src="Images/Instagram.svg" alt="Instagram"
+                    /></a>
+                  </li>
+                </div>
+                <div class="social-app flex justify-center item-center">
+                  <li>
+                    <a href="https://x.com/spotify"
+                      ><img src="Images/twitter.svg" alt="X"
+                    /></a>
+                  </li>
+                </div>
+                <div class="social-app flex justify-center item-center">
+                  <li>
+                    <a href="https://www.facebook.com/Spotify"
+                      ><img src="Images/fb.svg" alt="facebook"
+                    /></a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="break-line"></div>
+          <div class="copyright b3">© 2025 Spotify AB</div>
+        </div>
+      </div>
+    </main>
+    </div>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
