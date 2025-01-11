@@ -17,7 +17,7 @@ document.body.addEventListener("contextmenu", (e) => {
 );
 
 async function fetchArtist() {
-  let a = await fetch("http://192.168.53.242:3000/Songs/Artist");
+  let a = await fetch("/Songs/Artist");
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
@@ -47,7 +47,7 @@ async function fetchArtist() {
 }
 
 async function fetchAlbum() {
-  let a = await fetch("http://192.168.53.242:3000/Songs/Album");
+  let a = await fetch("/Songs/Album");
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
@@ -83,7 +83,7 @@ fetchArtist();
 async function getSong(folder) {
   prevSongID = "-1";
   songs.splice(0, songs.length);
-  let a = await fetch(`http://192.168.53.242:3000/Songs/${folder}`);
+  let a = await fetch(`/Songs/${folder}`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
