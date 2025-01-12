@@ -26,6 +26,11 @@ setTimeout(() => {
     window.open("https://linktr.ee/thepradyumnchaudhary", "_blank");
   }
   );
+  document.querySelectorAll(".play").forEach(playButton => {
+    playButton.addEventListener("click", (e) => {
+      logInFirst();document.querySelector("#logIn-alert").style.zIndex = 2;
+    });
+  });
 }, 1000);
 
 async function fetchArtist() {
@@ -50,12 +55,6 @@ async function fetchArtist() {
         </div>`
       }
   }
-  
-  document.querySelectorAll(".play").forEach(playButton => {
-    playButton.addEventListener("click", (e) => {
-      document.querySelector("#logIn-alert").style.zIndex = 2;
-    });
-  });
 }
 
 async function fetchAlbum() {
@@ -81,12 +80,6 @@ async function fetchAlbum() {
         </div>`
       }
   } 
-
-  document.querySelectorAll(".play").forEach(playButton => {
-    playButton.addEventListener("click", (e) => {
-      document.querySelector("#logIn-alert").style.zIndex = 2;
-    });
-  });
 }
 
 fetchAlbum();
