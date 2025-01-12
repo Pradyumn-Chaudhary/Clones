@@ -17,7 +17,7 @@ header {
   height: inherit;
   width: 33vw;
 }
-#menu{
+#menu {
   display: none;
 }
 .logo {
@@ -41,7 +41,7 @@ header {
   justify-content: baseline;
   gap: 3px;
 }
-#search-input{
+#search-input {
   width: 100%;
   text-overflow: ellipsis;
   color: #b3b3b3;
@@ -84,19 +84,19 @@ header {
   height: 88vh;
   gap: 7px;
 }
-#logIn-alert{
+#logIn-alert {
   position: absolute;
   z-index: -1;
   background-color: #1f1f1f;
   font-weight: bolder;
   gap: 4px;
 }
-#logIn-alert button{
-width: 70px;
-height: 30px;
-border-radius: 20px;
-background-color: #ffffff;
-font-weight: bolder;
+#logIn-alert button {
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  font-weight: bolder;
 }
 .left {
   width: 33vw;
@@ -124,28 +124,6 @@ font-weight: bolder;
   gap: 10px;
   overflow: auto;
 }
-.create-playlist,
-.browse-podcast {
-  padding: 20px;
-  gap: 12px;
-  border-radius: 15px;
-}
-.create-playlist span:first-child,
-.browse-podcast span:first-child {
-  font-weight: bold;
-  font-size: 18px;
-}
-.create-playlist button,
-.browse-podcast button {
-  background-color: #ffffff;
-  color: #000000;
-  width: 12vw;
-  margin-top: 10px;
-  height: 42px;
-  border-radius: 50px;
-  font-weight: bold;
-  font-size: 16px;
-}
 .song-card {
   height: 12vh;
   border: 1px solid #b3b3b3;
@@ -169,7 +147,8 @@ a {
   color: #b3b3b3;
   font-size: 11px;
 }
-.english, .sourceCode {
+.english,
+.sourceCode {
   width: 96px;
   height: 32px;
   border: 1px solid #ccc;
@@ -179,13 +158,14 @@ a {
   background-color: hsl(0deg 0% 7.06%);
   color: white;
 }
-.sourceCode{
+.sourceCode {
   width: 160px;
 }
-.english img, .sourceCode img{
+.english img,
+.sourceCode img {
   height: 16px;
 }
-.right{
+.right {
   position: relative;
   height: 88vh;
 }
@@ -289,7 +269,8 @@ a {
   border-radius: 50%;
   background-color: white;
 }
-.play-bar img, .play-bar svg{
+.play-bar img,
+.play-bar svg {
   height: 16px;
 }
 .song {
@@ -301,11 +282,11 @@ a {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-#seekBar{
+#seekBar {
   font-size: 9px;
-  width: calc(60vw/3);
+  width: calc(60vw / 3);
 }
-.seek-bar{
+.seek-bar {
   width: 15vw;
   border: 1px solid #b3b3b3;
   height: 3px;
@@ -320,22 +301,23 @@ a {
   position: absolute;
   bottom: -3px;
 }
-#song-mover{
+#song-mover {
   left: 0%;
 }
-#vol-mover{
+#vol-mover {
   left: 100%;
 }
-#song-bar, #vol-bar{
+#song-bar,
+#vol-bar {
   background-color: #ffffff;
   height: 3px;
   position: relative;
   border-radius: 3px;
 }
-#song-bar{
+#song-bar {
   width: 0px;
 }
-#vol-bar{
+#vol-bar {
   width: calc(100% + 9px);
 }
 
@@ -346,13 +328,13 @@ a {
     height: 30px;
     gap: 5px;
   }
-  #menu{
+  #menu {
     display: block;
   }
   .logo {
     margin-left: 1px;
   }
-  .logo img{
+  .logo img {
     height: 24px;
     width: 24px;
   }
@@ -368,7 +350,7 @@ a {
     height: 24px;
     width: 45vw;
   }
-  #search-input{
+  #search-input {
     font-size: 6px;
     display: flex;
   }
@@ -405,11 +387,7 @@ a {
     height: 45vh;
     gap: 10px;
   }
-  .create-playlist button,
-  .browse-podcast button {
-    width: 50vw;
-  }
-  .right{
+  .right {
     width: 100vw;
     z-index: 1;
   }
@@ -435,7 +413,7 @@ a {
   .artist-name {
     font-size: 12px;
   }
-  .prop{
+  .prop {
     font-size: 10px;
   }
   .play {
@@ -443,7 +421,7 @@ a {
     width: 16px;
     top: 85px;
   }
-  .play img{
+  .play img {
     width: 18px;
   }
   .card1 {
@@ -455,13 +433,13 @@ a {
     margin: 30px 10px;
     gap: 0px;
   }
-  .footer > div h4{
+  .footer > div h4 {
     font-size: 10px;
   }
-  .footer > div ul{
+  .footer > div ul {
     gap: 0px;
   }
-  .footer > div ul li a{
+  .footer > div ul li a {
     font-size: 7px;
   }
   .social-app {
@@ -475,14 +453,14 @@ a {
     font-size: 10px;
     padding-bottom: 30px;
   }
-  .play-bar{
+  .play-bar {
     flex-direction: column-reverse;
     gap: 0px;
     padding: 0;
-    margin:0px;
+    margin: 0px;
     bottom: 0;
   }
-  .song-info{
+  .song-info {
     width: 100%;
   }
   .song {
@@ -490,43 +468,49 @@ a {
     width: 100%;
     font-size: 10px;
   }
-  #seekBar{
+  #seekBar {
     font-size: 8px;
     width: 100%;
   }
   #seek-bar {
     width: 100%;
   }
-  .seek-bar{
+  .seek-bar {
     width: 75%;
   }
-  .vol, .vol img, #vol-seek-bar, #vol-bar, #vol-mover{
+  .vol,
+  .vol img,
+  #vol-seek-bar,
+  #vol-bar,
+  #vol-mover {
     display: none;
   }
 }
 
 @media (min-width: 420px) and (max-width: 576px) {
-  .card,.card1{
+  .card,
+  .card1 {
     width: calc(100% / 4);
   }
 }
 
-@media(min-width: 420px) and (in-width: 576px){
-  .card, .card1{
+@media (min-width: 420px) and (in-width: 576px) {
+  .card,
+  .card1 {
     width: calc(100% / 4);
   }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
   /* Styles for tablets */
-  #menu{
+  #menu {
     display: block;
   }
-  .search{
+  .search {
     width: 40vw;
     height: 44px;
   }
-  #search-input{
+  #search-input {
     font-size: 10px;
     display: flex;
   }
@@ -556,24 +540,20 @@ a {
     position: absolute;
     z-index: 0;
   }
-  .create-playlist button,
-  .browse-podcast button {
-    width: 50%;
-  }
-  .right{
+  .right {
     width: 100vw;
   }
-  .content{
+  .content {
     width: 100vw;
   }
   .social-app {
     background-color: hsl(0deg 0% 7.06%);
   }
 
-  .play-bar{
+  .play-bar {
     flex-direction: column-reverse;
   }
-  .song-info{
+  .song-info {
     width: 100%;
   }
   .song {
@@ -581,22 +561,27 @@ a {
     width: 100%;
     font-size: 14px;
   }
-  #seekBar{
+  #seekBar {
     width: 100%;
   }
   #seek-bar {
     width: 100%;
   }
-  .seek-bar{
+  .seek-bar {
     width: 75%;
   }
-  .vol, .vol img, #vol-seek-bar, #vol-bar, #vol-mover{
+  .vol,
+  .vol img,
+  #vol-seek-bar,
+  #vol-bar,
+  #vol-mover {
     display: none;
   }
 }
 
-@media (min-width: 820px) and (max-width: 992px){
-  .card, .card1{
+@media (min-width: 820px) and (max-width: 992px) {
+  .card,
+  .card1 {
     width: calc(100% / 6);
   }
 }
@@ -607,40 +592,44 @@ a {
 
 @media (min-width: 1300px) {
   /* Styles for desktops and larger screens */
-  .card, .card1{
+  .card,
+  .card1 {
     width: calc(100% / 7);
   }
 }
 
-@media (min-width:1450px) {
+@media (min-width: 1450px) {
   .home {
     width: 25vw;
   }
-  .search{
+  .search {
     width: 43vw;
   }
-  .left{
+  .left {
     width: 25vw;
   }
-  .right{
+  .right {
     width: 75vw;
   }
-  .content{
+  .content {
     width: 75vw;
   }
-  .card, .card1{
+  .card,
+  .card1 {
     width: calc(100% / 8);
   }
 }
 
-@media (min-width:1820px) {
-  .card, .card1{
+@media (min-width: 1820px) {
+  .card,
+  .card1 {
     width: calc(100% / 10);
   }
 }
 
-@media (min-width:2500px) {
-  .card, .card1{
+@media (min-width: 2500px) {
+  .card,
+  .card1 {
     width: calc(100% / 15);
   }
 }

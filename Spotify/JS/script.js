@@ -195,7 +195,6 @@ async function main(folder) {
 const signed = () => {
   isLogged = true;
   document.querySelector("#logIn-alert").style.zIndex = -1;
-  document.getElementById("plus").style.width = "0px"
   document.getElementsByClassName("scroll")[0].innerHTML = "";
   document.getElementsByClassName("log-btn")[0].innerHTML = "Log out";
   document.getElementsByClassName("sign-btn")[0].innerHTML = "";
@@ -340,7 +339,6 @@ const logout = () => {
   isLogged = false;
   currSong.pause();
   currSong.src = "";
-  document.getElementById("plus").style.width = "24px";
   document.getElementsByClassName(
     "scroll"
   )[0].innerHTML = "";
