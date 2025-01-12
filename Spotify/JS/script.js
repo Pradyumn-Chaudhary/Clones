@@ -28,7 +28,7 @@ setTimeout(() => {
   );
   document.querySelectorAll(".play").forEach(playButton => {
     playButton.addEventListener("click", (e) => {
-      logInFirst();document.querySelector("#logIn-alert").style.zIndex = 2;
+    document.querySelector("#logIn-alert").style.zIndex = 2;
     });
   });
 }, 1000);
