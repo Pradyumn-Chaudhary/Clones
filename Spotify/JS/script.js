@@ -38,6 +38,10 @@ async function fetchArtist() {
         </div>`
       }
   }
+  document.querySelector("#Developer").addEventListener("click", () => {
+    window.open("https://linktr.ee/thepradyumnchaudhary", "_blank");
+  }
+  );
   document.querySelectorAll(".play").forEach(playButton => {
     playButton.addEventListener("click", (e) => {
     document.querySelector("#logIn-alert").style.zIndex = 2;
@@ -67,7 +71,11 @@ async function fetchAlbum() {
           </div>
         </div>`
       }
-  } 
+  }
+  document.querySelector("#Developer").addEventListener("click", () => {
+    window.open("https://linktr.ee/thepradyumnchaudhary", "_blank");
+  }
+  );
   document.querySelectorAll(".play").forEach(playButton => {
     playButton.addEventListener("click", (e) => {
     document.querySelector("#logIn-alert").style.zIndex = 2;
@@ -77,6 +85,23 @@ async function fetchAlbum() {
 
 fetchAlbum();
 fetchArtist();
+
+setTimeout(() => {
+  document.querySelector("#artist").innerHTML += ` <div id="Developer" class="card flex column justify-center">
+      <img src="Images/Pradyumn.png" alt="Pradyumn" />
+      <span class="artist-name underline">Pradyumn</span>
+          <span class="b3 prop">Developer</span>
+        </div>`;
+  document.querySelector("#Developer").addEventListener("click", () => {
+    window.open("https://linktr.ee/thepradyumnchaudhary", "_blank");
+  }
+  );
+  document.querySelectorAll(".play").forEach(playButton => {
+    playButton.addEventListener("click", (e) => {
+      document.querySelector("#logIn-alert").style.zIndex = 2;
+    });
+  });
+}, 1000);
 
 async function getSong(folder) {
   prevSongID = "-1";
@@ -332,6 +357,10 @@ const signed = () => {
       }
     });
   });
+  document.querySelector("#Developer").addEventListener("click", () => {
+    window.open("https://linktr.ee/thepradyumnchaudhary", "_blank");
+  }
+  );
 };
 const logout = () => {
   isLogged = false;
