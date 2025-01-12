@@ -352,7 +352,6 @@ document.getElementsByClassName("log-btn")[0].addEventListener("click", () => {
     signed(); 
   } else {
     logout(); 
-    logInFirst();
   }
 });
 document
