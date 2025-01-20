@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Images/icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="src/output.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+    <div class="container flex flex-col-reverse sm:flex-row justify-center">
+        <div class="1 sm:w-[15%] 2xl:w-[30] flex flex-col gap-5 sm:items-end mr-4">
+            <div class="sidebar sticky top-0">
+                <div class="hidden logo sm:flex gap-2 items-center font-bold mt-3"><img src="Images/logo.svg" alt="" class="w-7 mb-3 ml-2">
+                    <span class="text-black hidden 2xl:block">Notification</span></div>
+                <ul class="flex w-full sm:flex-col sm:gap-3 justify-between sm:items-start fixed bottom-0 sm:static">
+                    <li class="cursor-pointer flex items-center font-bold gap-2 rounded-full justify-center hover:bg-[rgba(110,112,116,1)]"><div class="w-10 h-10 flex justify-center items-center"><img src="Images/home.svg" alt="" class="w-6"></div><span class="hidden 2xl:block">Home</span></li>
+
+                    <li class="cursor-pointer flex items-center font-bold gap-2 rounded-full  justify-center hover:bg-[rgba(110,112,116,1)]"><div class="w-10 h-10 flex justify-center items-center"><img src="Images/search.svg" alt="" class="w-6"></div><span class="hidden 2xl:block">Search</span></li>
+
+                    <li class="cursor-pointer flex items-center font-bold gap-2 rounded-full  justify-center hover:bg-[rgba(110,112,116,1)]"><div class="w-10 h-10 flex justify-center items-center"><img src="Images/notification.svg" alt="" class="w-6"></div><span class="hidden 2xl:block">Notifications</span></li>
+
+                    <li class="cursor-pointer flex items-center font-bold gap-2 rounded-full  justify-center hover:bg-[rgba(110,112,116,1)]"><div class="w-10 h-10 flex justify-center items-center"><img src="Images/message.svg" alt="" class="w-6"></div><span class="hidden 2xl:block">Messages</span></li>
+
+                    <li class="cursor-pointer flex items-center font-bold gap-2 rounded-full  justify-center hover:bg-[rgba(110,112,116,1)]"><div class="w-10 h-10 flex justify-center items-center"><img src="Images/grok.svg" alt="" class="w-6"></div><span class="hidden 2xl:block">Grok</span></li>
+
+                    <li class="cursor-pointer flex items-center font-bold gap-2 rounded-full  justify-center hover:bg-[rgba(110,112,116,1)]"><div class="w-10 h-10 flex justify-center items-center"><img src="Images/profile.svg" alt="" class="w-6"></div><span class="hidden 2xl:block">Profile</span></li>
+
+                    <li class="cursor-pointer sm:flex items-center font-bold gap-2 rounded-full  justify-center hover:bg-[rgba(110,112,116,1)] hidden"><div class="w-10 h-10 flex justify-center items-center"><img src="Images/more.svg" alt="" class="w-6"></div><span class="hidden 2xl:block">More</span></li>
+                    
+                    <li class="cursor-pointer sm:flex items-center font-bold gap-2 bg-white rounded-full  justify-center 2xl:w-28 hidden"><div class="w-10 h-10 flex justify-center items-center 2xl:hidden"><img src="Images/post.svg" alt="" class="w-5"></div><span class="text-black hidden 2xl:block">Post</span></li>
+
+                </ul>
+                <img src="Images/Pradyumn Chaudhary .jpg" alt="" class="hidden sm:block cursor-pointer profile w-9 h-9 rounded-full absolute top-[104%]">
+            </div>
+        </div>
+
+
+        <div class="2 lg:w-[45%] 2xl:w-[40%] border border-gray-500 mb-10">
+                <ul class="flex items-center h-12 border border-gray-500 font-bold text-[#3f4043] sm:sticky top-0 bg-black">
+                    <li class="group hover:text-white relative w-3/6 flex justify-center items-center hover:bg-[rgba(110,112,116,1)] h-full">For you <div class="bg-sky-400 w-full h-1 rounded-full absolute top-11 hidden group-hover:block"></div></li>
+                    <li class="group hover:text-white relative w-3/6 flex justify-center items-center hover:bg-[rgba(110,112,116,1)] h-full">Following<div class="bg-sky-400 w-full h-1 rounded-full absolute top-11 hidden group-hover:block"></div></li>
+                </ul>
+
+                <div class="flex my-4 mx-4 gap-4 items-start h-24">
+                   <img src="Images/Pradyumn Chaudhary .jpg" alt="" class="w-10 h-10 rounded-full">
+                   <div class="flex flex-col justify-between h-full w-full">
+                    <input class="text-2xl bg-black outline-none" placeholder="What is happening?!"></input>
+                    <div class="flex justify-between w-full">
+                        <div class="flex gap-3 items-center">
+                            <img src="Images/media.svg" alt="" class="h-6">
+                            <img src="Images/gif.svg" alt="" class="h-6">
+                            <img src="Images/blueGrok.svg" alt="" class="h-6">
+                            <img src="Images/pn.svg" alt="" class="h-6">
+                            <img src="Images/emoji.svg" alt="" class="h-6">
+                            <img src="Images/calender.svg" alt="" class="h-6">
+                            <img src="Images/location.svg" alt="" class="h-6">
+                        </div>
+                        <button class="bg-white text-black font-bold w-1/6 rounded-full h-7">Post</button>
+                    </div>
+                   </div>
+                </div>
+                <hr class="border-gray-500">
+
+                <div class="my-4 mx-4 flex flex-col gap-3 post">
+                    <div class="flex gap-3 justify-between">
+                        <div class="flex gap-3">
+                            <img src="Images/doggy.png" alt="" class="w-10 h-10 rounded-full inline">
+                        <div class="flex flex-col gap-3">
+                            <div>
+                            <h1 class="inline font-bold">DogeDesigner</h1>
+                            <img src="Images/bluetick.svg" alt="" class="w-6 inline">
+                            <img src="Images/doge.png" alt="" class="w-6 inline">
+                            <span class="text-[#3f4043] ">@cb_doge · 5h</span>
+                            <h1>MAKE AMERICA FUN AGAIN </h1>
+                            </div>
+                            <img src="Images/musk.png" alt="">
+                        </div>
+                        </div>
+                        <div>
+                            <img src="Images/grok.svg" alt="" class="w-6 inline">
+                            <img src="Images/dots.svg" alt="" class="w-6 inline">
+                        </div>
+                    </div>
+                    <div class="flex justify-between ml-12 mr-2">
+                        <div class="flex w-full justify-between">
+                           <div class="flex items-center gap-1">
+                            <img src="Images/comment.svg" alt="" class="w-5">
+                            <span class="text-[#3f4043] text-[12px]">2.4K</span>
+                           </div>
+                           <div class="flex items-center gap-1">
+                            <img src="Images/retweet.svg" alt="" class="w-5">
+                            <span class="text-[#3f4043] text-[12px]">7.6K</span>
+                           </div>
+                           <div class="flex items-center gap-1">
+                            <img src="Images/like.svg" alt="" class="w-5">
+                            <span class="text-[#3f4043] text-[12px]">62K</span>
+                           </div>
+                           <div class="flex items-center gap-1">
+                            <img src="Images/trend.svg" alt="" class="w-5">
+                            <span class="text-[#3f4043] text-[12px]">1.9M</span>
+                           </div>
+                        </div>
+                        <div class="flex gap-2 ml-2">
+                            <img src="Images/bookmark.svg" alt="" class="w-5">
+                            <img src="Images/share.svg" alt="" class="w-5">
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-gray-500">
+                <div class="my-4 mx-4 flex flex-col gap-3 post">
+                    <div class="flex gap-3 justify-between">
+                        <div class="flex gap-3">
+                            <img src="Images/doggy.png" alt="" class="w-10 h-10 rounded-full inline">
+                        <div class="flex flex-col gap-3">
+                            <div>
+                            <h1 class="inline font-bold">DogeDesigner</h1>
+                            <img src="Images/bluetick.svg" alt="" class="w-6 inline">
+                            <img src="Images/doge.png" alt="" class="w-6 inline">
+                            <span class="text-[#3f4043] ">@cb_doge · 5h</span>
+                            <h1>MAKE AMERICA FUN AGAIN </h1>
+                            </div>
+                            <img src="Images/musk.png" alt="">
+                        </div>
+                        </div>
+                        <div>
+                            <img src="Images/grok.svg" alt="" class="w-6 inline">
+                            <img src="Images/dots.svg" alt="" class="w-6 inline">
+                        </div>
+                    </div>
+                    <div class="flex justify-between ml-12 mr-2">
+                        <div class="flex w-full justify-between">
+                           <div class="flex items-center gap-1">
+                            <img src="Images/comment.svg" alt="" class="w-5">
+                            <span class="text-[#3f4043] text-[12px]">2.4K</span>
+                           </div>
+                           <div class="flex items-center gap-1">
+                            <img src="Images/retweet.svg" alt="" class="w-5">
+                            <span class="text-[#3f4043] text-[12px]">7.6K</span>
+                           </div>
+                           <div class="flex items-center gap-1">
+                            <img src="Images/like.svg" alt="" class="w-5">
+                            <span class="text-[#3f4043] text-[12px]">62K</span>
+                           </div>
+                           <div class="flex items-center gap-1">
+                            <img src="Images/trend.svg" alt="" class="w-5">
+                            <span class="text-[#3f4043] text-[12px]">1.9M</span>
+                           </div>
+                        </div>
+                        <div class="flex gap-2 ml-2">
+                            <img src="Images/bookmark.svg" alt="" class="w-5">
+                            <img src="Images/share.svg" alt="" class="w-5">
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-gray-500">
+                <div class="my-4 mx-4 flex flex-col gap-3 post">
+                    <div class="flex gap-3 justify-between">
+                        <div class="flex gap-3">
+                            <img src="Images/doggy.png" alt="" class="w-10 h-10 rounded-full inline">
+                        <div class="flex flex-col gap-3">
+                            <div>
+                            <h1 class="inline font-bold">DogeDesigner</h1>
+                            <img src="Images/bluetick.svg" alt="" class="w-6 inline">
+                            <img src="Images/doge.png" alt="" class="w-6 inline">
+                            <span class="text-[#3f4043] ">@cb_doge · 5h</span>
+                            <h1>MAKE AMERICA FUN AGAIN </h1>
+                            </div>
+                            <img src="Images/musk.png" alt="">
+                        </div>
+                        </div>
+                        <div>
+                            <img src="Images/grok.svg" alt="" class="w-6 inline">
+                            <img src="Images/dots.svg" alt="" class="w-6 inline">
+                        </div>
+                    </div>
+                    <div class="flex justify-between ml-12 mr-2">
+                        <div class="flex w-full justify-between">
+                           <div class="flex items-center gap-1">
+                            <img src="Images/comment.svg" alt="" class="w-5">
+                            <span class="text-[#3f4043] text-[12px]">2.4K</span>
+                           </div>
+                           <div class="flex items-center gap-1">
+                            <img src="Images/retweet.svg" alt="" class="w-5">
+                            <span class="text-[#3f4043] text-[12px]">7.6K</span>
+                           </div>
+                           <div class="flex items-center gap-1">
+                            <img src="Images/like.svg" alt="" class="w-5">
+                            <span class="text-[#3f4043] text-[12px]">62K</span>
+                           </div>
+                           <div class="flex items-center gap-1">
+                            <img src="Images/trend.svg" alt="" class="w-5">
+                            <span class="text-[#3f4043] text-[12px]">1.9M</span>
+                           </div>
+                        </div>
+                        <div class="flex gap-2 ml-2">
+                            <img src="Images/bookmark.svg" alt="" class="w-5">
+                            <img src="Images/share.svg" alt="" class="w-5">
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-gray-500">
+
+        </div>
+
+
+        <div class="3 hidden w-[40%] 2xl:w-[30%] lg:flex flex-col gap-3 pl-10 pr-20">
+            <div class=" border border-gray-500 mt-2 h-10 rounded-full flex items-center text-[#3f4043] sticky top-0 bg-black">
+                <img src="Images/search1.svg" alt="" class="w-5 ml-3 mr-1">
+                <input type="text" placeholder="Search" class="text-sm mb-1 bg-black w-3/4 outline-none text-white">
+            </div>
+            <div class="border border-gray-500 rounded-lg flex flex-col gap-3">
+                <h1 class="font-bold text-lg mx-5 mt-2">Subscribe to Premium</h1>
+                <span class="text-[14px] ml-5 mr-10">Subscribe to unlock new features and if eligible, receive a share of revenue.</span>
+                <button class="bg-sky-400 font-bold rounded-full w-1/3 h-10 mx-5 mb-2">Subscribe</button>
+            </div>
+            <div class="border border-gray-500 rounded-lg flex flex-col gap-3">
+                <h1 class="font-bold text-lg mx-5 mt-2">What's happening</h1>
+                <div class="flex mx-5 gap-2">
+                    <img src="Images/khloe.png" alt="" class="w-[79.17px] h-[79.17px] rounded-xl">
+                    <div>
+                        <h1 class="font-bold">Khloé in Wonder Land</h1>
+                        <span class="text-[14px] text-[#71767B]">LIVE</span>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div class="flex mx-5 justify-between">
+                        <div class="flex gap-0 flex-col">
+                            <span class="text-[#71767B] text-[13px]">Entertainment · Trending</span>
+                            <h1 class="font-bold">#RajatDalal</h1>
+                            <span class="text-[#71767B] text-[13px]">140K posts</span>
+                        </div>
+                        <div><img src="Images/dots.svg" alt="" class="w-5">
+                    </div>
+                    </div>
+                    <div class="flex mx-5 justify-between">
+                        <div class="flex gap-0 flex-col">
+                            <span class="text-[#71767B] text-[13px]">Trending in India</span>
+                            <h1 class="font-bold">#NeerajChopra</h1>
+                            <span class="text-[#71767B] text-[13px]">2,210 posts</span>
+                        </div>
+                        <div><img src="Images/dots.svg" alt="" class="w-5">
+                    </div>
+                    </div>
+                    <div class="flex mx-5 justify-between">
+                        <div class="flex gap-0 flex-col">
+                            <span class="text-[#71767B] text-[13px]">Entertainment · Trending</span>
+                            <h1 class="font-bold">#SalmanKhan𓃵</h1>
+                            <span class="text-[#71767B] text-[13px]">4,348 posts</span>
+                        </div>
+                        <div><img src="Images/dots.svg" alt="" class="w-5">
+                    </div>
+                    </div>
+                    <div class="flex mx-5 justify-between">
+                        <div class="flex gap-0 flex-col">
+                            <span class="text-[#71767B] text-[13px]">Entertainment · Trending</span>
+                            <h1 class="font-bold">Evicted</h1>
+                            <span class="text-[#71767B] text-[13px]">30.4K posts</span>
+                        </div>
+                        <div><img src="Images/dots.svg" alt="" class="w-5">
+                    </div>
+                    </div>
+                    <a href="" class="mx-5 text-sky-500">Show More</a>
+                </div>
+                </div>
+                <div class="border border-gray-500 rounded-lg flex flex-col gap-3">
+                    <h1 class="font-bold text-lg mx-5 mt-2">Who to follow</h1>    
+                    <div class="flex justify-between mx-5 gap-2">
+                        <div class="flex gap-2">
+                            <img src="Images/economist.png" alt="" class="w-[79.17px] h-[79.17px] rounded-xl">
+                            <div>
+                                <h1 class="font-bold inline">The Economist</h1>
+                                <img src="Images/verified.svg" alt="" class="inline w-4">
+                                <span class="text-[14px] text-[#71767B] block">@TheEconomist</span>
+                            </div>
+                    </div>
+                    <button class="font-bold w-1/4 bg-white text-black h-8 flex justify-center items-center rounded-full">Follow</button>
+                    </div>    
+                    
+                    <div class="flex justify-between mx-5 gap-2">
+                        <div class="flex gap-2">
+                            <img src="Images/wsj.png" alt="" class="w-[79.17px] h-[79.17px] rounded-xl">
+                            <div>
+                                <h1 class="font-bold inline">The Wall Street Journal</h1>
+                                <img src="Images/verified.svg" alt="" class="inline w-4">
+                                <span class="text-[14px] text-[#71767B] block">@WSJ</span>
+                            </div>
+                    </div>
+                    <button class="font-bold w-1/4 bg-white text-black h-8 flex justify-center items-center rounded-full">Follow</button>
+                    </div>                        
+                    <div class="flex justify-between mx-5 gap-2">
+                        <div class="flex gap-2">
+                            <img src="Images/mozilla.png" alt="" class="w-[79.17px] h-[79.17px] rounded-xl">
+                            <div>
+                                <h1 class="font-bold inline">Mozzila</h1>
+                                <img src="Images/bluetick.svg" alt="" class="inline w-4">
+                                <span class="text-[14px] text-[#71767B] block">@mozilla</span>
+                            </div>
+                    </div>
+                    <button class="font-bold w-1/4 bg-white text-black h-8 flex justify-center items-center rounded-full">Follow</button>
+                    </div>        
+                    <a href="" class="mx-5 text-sky-500">Show More</a>                
+                </div>
+                <div class="terms text-[#3f4043] text-sm flex flex-col gap-3 mb-32">
+                    <ul class="grid grid-cols-3">
+                        <li>Terms of Service</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookie Policy</li>
+                        <li>Accessibility</li>
+                        <li>Ads info</li>
+                        <li>More</li>
+                    </ul>
+                    <span>© 2025 X Corp.</span>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
